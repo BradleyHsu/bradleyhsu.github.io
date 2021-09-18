@@ -1,3 +1,4 @@
+<!-- #region HTML Header-->
 <!DOCTYPE html>
 <html><head>
     <meta 
@@ -14,12 +15,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="styles.css">
 </head>
+<!-- #endregion HTML Header-->
+
 <body>
     <section>
         <p><h1>Bradley Hsu</h1></p>
         <!-- #region Subheader-->
         <p class = "header">
-            Resume 
+            <a>
+                Resume
+            </a> 
             <a href = "https://www.linkedin.com/in/bradley-hsu-a57791210/" 
                     target="_blank" rel="noopener noreferrer">
                 LinkedIn
@@ -28,9 +33,13 @@
                     rel="noopener noreferrer"> 
                 GitHub
             </a>  
+            <span>
+                Email
+            </span>
         </p>
         <!-- #endregion -->
 
+        <!-- #region Things I am-->
         <p><h2>Things I am</h2></p>
             <p class = "mainparagraph">
                 Hi! I'm Bradley Hsu, currently an undergrad at Washington University 
@@ -38,27 +47,34 @@
                 <br> 
                 I'm super passionate about tech and I love to make things.
             </p>
+        <!-- #endregion-->
 
         <!-- #region Things I'm working on-->
         <p><h2>
             Thing's I've made/am currently working on (and am able to display):
         </h2></p>
-            <p class="subheading"><a>
+            <details>
+            <summary class="subheading"><a>
                 WashU Course Linker (Used by 300+ people!)
-            </a></p>
+            </a></summary>
                 <p class="paragraph"> 
                     WashU students didn't have a single place to find links 
                     to their class's group chats.
                     As a solution, my roommate and I made a website for students 
                     to post and get links to their class's group chats.
+                    So far, it's been used by 300+ people, and more than
+                    1/4 of my WashU class.
                 </p>
                 <p class = "paragraph">
                     WashU Course Linker is built with MongoDB, Express.js, React, 
                     and Node.js, and deployed on AWS with Docker.
                 </p>
-            <p class="subheading"><a>
+            </details>
+
+            <details>
+            <summary class="subheading"><a>
                 Eco2Go Tracker (Winner at Hacktech 2021!)
-            </a></p>
+            </a></summary>
                 <p class = "paragraph"> 
                     During COVID, my university's cafeterias distributed food in 
                     single-use containers. 
@@ -73,15 +89,17 @@
                     I made a tracker for our university's Eco2Go program to spread 
                     awareness of the program and decrease the use of unsustainable 
                     single-use plastics. 
-                    Eco2Go tracker was selected as a winning hack at Hacktech 2021.
                 </p>
                 <p class = "paragraph">
-                    Eco2Go Tracker is built with React, tensorflow-js, and 
-                    Google Firebase as a backend,
+                    Eco2Go Tracker was selected as a winning hack at Hacktech 2021.
+                    It is built with React, tensorflow-js, and Google Firebase.
                 </p>
-            <p class="subheading"><a>
+            </details>
+
+            <details>
+            <summary class="subheading"><a>
                 Backpropagation Visualizer (the first of it's kind!)
-            </a></p>
+            </a></summary>
                 <p class = "paragraph">
                     Backpropagation is the algorithm that machine learning 
                     algorithms use to "learn." 
@@ -94,6 +112,7 @@
                     Backprop Visualizer is built with React and makes 
                     use of the Cytoscape.js library
                 </p>
+            </details>
         <!-- #endregion -->
         
     </section>
