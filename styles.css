@@ -15,6 +15,14 @@
   font-weight: bold;
 }
 
+.mainparagraph{
+  margin-left: 1em;
+}
+
+.header{
+  word-spacing: 1em;
+}
+
 body{
   margin: 0 auto;
   max-width: 50em;
