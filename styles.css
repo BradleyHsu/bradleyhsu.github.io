@@ -7,7 +7,7 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
 .paragraph{
-  margin-left: 1.5em;
+  margin-left: 3em;
   margin-bottom: .25em;
 }
 
@@ -73,3 +73,8 @@ a:link {
   a:active {
     text-decoration: underline;
   }
+
+details > summary {
+  padding: 2px 6px;
+  cursor: pointer;
+}
