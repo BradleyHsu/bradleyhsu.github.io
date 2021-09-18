@@ -1,42 +1,41 @@
-* {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-}
-.w600 {
-font-weight: 600;
-}
-.w400 {
-font-weight: 400;
-}
+
 /*.container{
     display: flex;
     justify-content: center;
     align-items: center;
 }*/
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
-section {
-    padding: 1em;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
-
-p{
-    text-align: center;
-}
-.textbox {
-  text-align: left;
-}
-.header{
-    font-size: 24px;
-    font-weight: 600
+.paragraph{
+  margin-left: 1.5em;
 }
 
-a{
-    color: black
-
+.subheading{
+  margin-left: 1em;
+  font-weight: bold;
 }
+
+body{
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #555;
+}
+h1 {
+  font-size: 2em
+}
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+h1,
+h2,
+strong {
+  color: #333;
+}
+
 a:link {
     text-decoration: none;
   }
