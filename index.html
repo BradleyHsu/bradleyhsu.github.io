@@ -34,10 +34,12 @@
                     rel="noopener noreferrer"> 
                 GitHub
             </a>  
-            <span>
-                Email
-            </span>
+            <span id = "iemail">
+                <a style="cursor: pointer;" title = "Click to reveal!"">
+                    Email</a>
+                </span>
         </p>
+        <div id="demail"></div> 
         <!-- #endregion -->
 
         <!-- #region Things I am-->
@@ -63,11 +65,10 @@
             </summary>
                 <p class="paragraph"> 
                     WashU students didn't have a single place to find links 
-                    to their class's group chats.
-                    As a solution, my roommate and I made a website for students 
-                    to post and get links to their class's group chats.
-                    So far, it's been used by 300+ people, and more than
-                    1/4 of my WashU class.
+                    to their class's group chats. As a solution, my roommate and 
+                    I made a website for students to post and get links to their 
+                    class's group chats. So far, it's been used by 300+ people, 
+                    and more than 1/4 of my WashU class.
                 </p>
                 <p class = "paragraph">
                     WashU Course Linker is built with MongoDB, Express.js, React, 
@@ -83,12 +84,11 @@
             </summary>
                 <p class = "paragraph"> 
                     During COVID, my university's cafeterias distributed food in 
-                    single-use containers. 
-                    To decrease waste, they offered an Eco2Go program, allowing 
-                    students to opt into using durable, reusable containers that 
-                    would have to be returned after eating. 
-                    Very few students were aware of Eco2Go, so the program was 
-                    not widely used.
+                    single-use containers. To decrease waste, they offered an 
+                    Eco2Go program, allowing students to opt into using durable, 
+                    reusable containers that would have to be returned after 
+                    eating. Very few students were aware of Eco2Go, so the 
+                    program was not widely used.
                 </p>
                 <p class = "paragraph">
                     Therefore, while at Caltech's Hacktech 2021, my roommate and 
@@ -110,11 +110,10 @@
             </summary>
                 <p class = "paragraph">
                     Backpropagation is the algorithm that machine learning 
-                    algorithms use to "learn." 
-                    When I was learning machine learning, I found it hard to 
-                    understand backprop, so I looked for an interactive visualizer 
-                    of the algorithm, but I couldn't find anything.
-                    Therefore, I decided to make one.
+                    algorithms use to "learn." When I was learning machine 
+                    learning, I found it hard to understand backprop, so I 
+                    looked for an interactive visualizer of the algorithm, but 
+                    I couldn't find anything. Therefore, I decided to make one.
                 </p>
                 <p class = "paragraph">
                     Backprop Visualizer is built with React and makes 
@@ -132,10 +131,9 @@
                 Software Developer
             </summary>
                 <p class="paragraph"> 
-                    I'm working on building the front-end of a 
-                    telehealth system for diagnosing hearing problems
-                    with machine learning models under a startup run by
-                    Professor Dennis Barbour.
+                    I'm working on building the front-end of a telehealth 
+                    system for diagnosing hearing problems with machine learning 
+                    models under a startup run by Professor Dennis Barbour.
                 </p>
                 <p class = "paragraph">
                     Tech stack is HTML/CSS/JavaScript,
@@ -151,11 +149,10 @@
                     and lead Python data science labs.
                 </p>
                 <p class = "paragraph">
-                    If you're considering taking the class, I really
-                    encourage you to do so! Data science is a really useful
-                    skill to have.
-                    The class is also a great introduction to Python, and 
-                    the whole data science toolkit - NumPy, <br> scikit-learn, 
+                    If you're considering taking the class, I really encourage 
+                    you to do so! Data science is a really useful skill to have. 
+                    The class is also a great introduction to Python, and the 
+                    whole data science toolkit - NumPy, <br> scikit-learn, 
                     Matplotlib, and so on.
                 </p>
             </details>
@@ -167,11 +164,10 @@
                         I'm currently a Software Lead for WashU Neurotech.
                         We're a student club dedicated to creating
                         Neurotech-based projects. I lead software development,
-                        which includes both UI/UX design and 
-                        data engineering/machine learning model development. 
-                        I'm also in charge of our machine learning education
-                        sessions, which takes our members through a crash course
-                        on practical deep learning
+                        which includes both UI/UX design and data engineering/
+                        machine learning model development. I'm also in charge 
+                        of our machine learning education sessions, which takes 
+                        our members through a crash course on practical deep learning
                     </p>
                     <p class = "paragraph">
                         If you're part of the WashU community and you'd like to 
@@ -207,4 +203,16 @@
                     </details>
         <!-- #endregion-->
     </section>
+    <script type="text/javascript">
+        let e_is_shown = false;
+        let emailToggle = () => {
+          let demail = document.getElementById('demail');
+          demail.innerHTML = 'b [dot] hsu' + ' [at] ' + 'wustl' + '  [dot]  ' + 'edu';
+          demail.style.opacity = e_is_shown ? 0 : 1;
+          e_is_shown = !e_is_shown;
+        }
+        document.getElementById('iemail').addEventListener("click", emailToggle);
+        document.getElementById('lemail').addEventListener("click", emailToggle);
+      </script>
+    
 </body></html>
